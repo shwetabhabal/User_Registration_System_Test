@@ -6,10 +6,8 @@ public class userRegisteration {
         String regex = "[A-Z][a-z]{2,}";
         return Pattern.matches(regex, name);
     }
-    public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        System.out.println("enter first name: ");
-        String firstname = sc.nextLine();
-        System.out.println(isvalidfirstname(firstname));
+    public static boolean isvalidlastname(String name){
+        String regex = "[A-Z][a-z]{2,}";
+        return Pattern.matches(regex, name);
     }
 }

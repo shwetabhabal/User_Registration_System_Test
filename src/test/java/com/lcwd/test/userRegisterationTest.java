@@ -1,12 +1,19 @@
 package com.lcwd.test;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class userRegisterationTest {
     @Test
-    public void isvalidfrstnameTest(){
+    public void isvalidfirstnameTest(){
         boolean res =userRegisteration.isvalidfirstname("Shweta");
-        Assert.assertTrue(res);
+        Assertions.assertTrue(res);
     }
+    @Test
+    public void isvalidlastnameTest(){
+        boolean res =userRegisteration.isvalidlastname("Kumar");
+        Assertions.assertTrue(res);
+    }
+
 }
