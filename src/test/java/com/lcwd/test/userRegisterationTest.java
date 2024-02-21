@@ -5,8 +5,8 @@ import org.junit.Test;
 
 public class userRegisterationTest {
     @Test
-    public void isvalidnameTest(){
-        boolean res =userRegisteration.isvalidname("Shweta");
+    public void isvalidfrstnameTest(){
+        boolean res =userRegisteration.isvalidfirstname("Shweta");
         Assert.assertTrue(res);
     }
 }
