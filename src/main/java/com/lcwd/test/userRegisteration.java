@@ -14,4 +14,8 @@ public class userRegisteration {
         String regex = "[a-zA-z0-1_.]+@[a-z]+[.][a-z]{2,3}";
         return Pattern.matches(regex, email);
     }
+    public static boolean isvalidphone(String phone){
+        String regex = "[9][1] [0-9]{10}";
+        return Pattern.matches(regex,phone);
+    }
 }
