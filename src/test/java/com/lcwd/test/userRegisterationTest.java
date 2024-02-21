@@ -15,5 +15,9 @@ public class userRegisterationTest {
         boolean res =userRegisteration.isvalidlastname("Kumar");
         Assertions.assertTrue(res);
     }
-
+    @Test
+    public void isvalidemailTest(){
+        boolean res = userRegisteration.isvalidemail("ravi@gmail.com");
+        Assertions.assertTrue(res);
+    }
 }
