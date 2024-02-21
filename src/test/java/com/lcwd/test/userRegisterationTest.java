@@ -37,7 +37,7 @@ public class userRegisterationTest {
     @Test
     public void isvalidpasswordTest(){
         System.out.println("password test");
-        boolean res = userRegisteration.isvalidpassword("2121212121");
+        boolean res = userRegisteration.isvalidpassword("A2121212121");
         Assertions.assertTrue(res);
     }
 }

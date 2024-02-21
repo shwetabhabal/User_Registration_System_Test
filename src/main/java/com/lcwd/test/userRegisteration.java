@@ -19,7 +19,7 @@ public class userRegisteration {
         return Pattern.matches(regex,phone);
     }
     public static boolean isvalidpassword(String pass){
-        String regex= "[a-zA-z0-9]{8,}";
+        String regex= "[A-Z]+[a-zA-z0-9]{8,}";
         return Pattern.matches(regex,pass);
     }
 }
