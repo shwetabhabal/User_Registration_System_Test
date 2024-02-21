@@ -18,4 +18,8 @@ public class userRegisteration {
         String regex = "[9][1] [0-9]{10}";
         return Pattern.matches(regex,phone);
     }
+    public static boolean isvalidpassword(String pass){
+        String regex= "[a-zA-z0-9]{8,}";
+        return Pattern.matches(regex,pass);
+    }
 }
