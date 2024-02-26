@@ -11,7 +11,8 @@ public class userRegisteration {
         return Pattern.matches(regex, name);
     }
     public static boolean isvalidemail(String email){
-        String regex = "[a-zA-z0-1_.]+@[a-z]+[.][a-z]{2,3}";
+//        String regex = "[^.][a-zA-z0-1_.][^.]+@{1}[a-z]+[.][a-z]{2,3}";
+        String regex = "^[^.][a-zA-Z0-9+_-]+[^.][@][a-zA-Z0-9]+[.]co(m|.in)$";
         return Pattern.matches(regex, email);
     }
     public static boolean isvalidphone(String phone){
