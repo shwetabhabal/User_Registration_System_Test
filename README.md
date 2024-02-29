@@ -1,21 +1,22 @@
-AddressBook System
+User Registration
 
-Ability to create a Contacts in Address Book with first and last names, address, city, state, zip, phone number and email...
+User need to enter a valid First Name - First name starts with Cap and has minimum 3 characters
 
-Ability to add a new Contact to Address Book
+User need to enter a valid Last Name - Last name starts with Cap and has minimum 3 characters
 
-Ability to edit existing contact person using their name
+User need to enter a valid
 
-Ability to delete a person using person's name 
+User need to follow pre -defined Mobile Format - E.g. 91 9919819801 
 
-Ability to add multiple person to Address Book
+User need to follow pre-defined Password rules.
+Rule1– minimum 8 Characters 
+Rule2– Should have at least 1 Upper Case 
+Rule3– Should have at least 1 numeric number in the password
+Rule4 – Has exactly 1 Special Character
+Should clear all email samples provided separately
 
-Refactor to add multiple Address Book to the System. Each Address Book has a unique Name 
+Write JUnit Test to validate the User Entry for First Name, Last Name, Email, Mobile, and Password.
 
-Ability to ensure there is no Duplicate Entry of the same Person in a particular Address Book 
+Write JUnit Parameterised Test to validate multiple entry for the Email Address.
 
-Ability to search Person in a City or State across the multiple AddressBook 
-
-Ability to view Persons by City or State 
-
-Ability to get number of contact persons i.e. count by City or State
+Refactor the Code to throw custom exceptions in case of Invalid User Details
