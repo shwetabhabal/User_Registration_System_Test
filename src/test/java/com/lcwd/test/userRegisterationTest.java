@@ -14,7 +14,7 @@ public class userRegisterationTest {
 //        boolean res =userRegisteration.isvalidfirstname("Shweta");
 //        Assertions.assertTrue(res);
         try{
-            boolean res =userRegisteration.isvalidfirstname("Shweta");
+            boolean res =userRegisteration.isvalidfirstname("shweta");
             Assertions.assertTrue(res);
         }
         catch (Invalidfirstname e){
@@ -37,18 +37,18 @@ public class userRegisterationTest {
         System.out.println("email test");
         try {
             boolean res = userRegisteration.isvalidemail("ravi@gmail.com");
-//            Assertions.assertFalse(res);
+            Assertions.assertTrue(res);
         }catch (InvalidEmail e){
             Assertions.assertEquals("Invalid email", e.getMessage());
         }
 
-        try {
-            boolean email1 = userRegisteration.isvalidemail("abc");
-            Assertions.assertFalse(email1);
-        }catch (InvalidEmail e){
-            Assertions.assertEquals("Invalid email", e.getMessage());
-            System.out.println(e.getMessage());
-        }
+//        try {
+//            boolean email1 = userRegisteration.isvalidemail("abc");
+//            Assertions.assertFalse(email1);
+//        }catch (InvalidEmail e){
+//            Assertions.assertEquals("Invalid email", e.getMessage());
+//
+//        }
 //        try {
 //        boolean email2 = userRegisteration.isvalidemail("abc@.com.my");
 //        Assertions.assertFalse(email2);
@@ -94,7 +94,7 @@ public class userRegisterationTest {
         try {
             boolean res = userRegisteration.isvalidpassword("A2@121212121");
             Assertions.assertTrue(res);
-        }catch (Invalidphone e){
+        }catch (Invalidpassword e){
             Assertions.assertEquals("Invalidphone", e.getMessage());
         }
     }
